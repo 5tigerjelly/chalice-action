@@ -11,10 +11,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
-    - name: npm install
-      uses: actions/npm@master
+    - uses: actions/setup-python@v1
       with:
-        args: install
+        python-version: '3.7'
+        architecture: 'x64'
     - name: chalice deploy
       uses: 5tigerjelly/chalice-action@v1
       with:
