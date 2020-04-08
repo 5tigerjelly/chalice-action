@@ -1,3 +1,3 @@
 #!/bin/sh -l
 
-echo "chalice $1"
+chalice "$1"
