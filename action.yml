@@ -2,7 +2,10 @@ on:
   push:
     branches:
       - master
-name: Deploy master branch to Chalice
+name: AWS Chalice Action
+description: This Github action allows automatated deployment of your AWS Chalice application via Github Actions.
+icon: cloud
+color: yellow
 jobs:
   deploy:
     name: deploy
