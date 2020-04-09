@@ -19,7 +19,7 @@ jobs:
     steps:
     - uses: actions/checkout@master
     - name: chalice deploy
-      uses: 5tigerjelly/chalice-action@v1
+      uses: 5tigerjelly/chalice-action@master
       with:
         args: deploy
       env:
@@ -43,7 +43,7 @@ jobs:
     steps:
     - uses: actions/checkout@master
     - name: chalice deploy
-      uses: 5tigerjelly/chalice-action@v1
+      uses: 5tigerjelly/chalice-action@master
       with:
         args: deploy --stage prod
       env:
@@ -68,7 +68,7 @@ jobs:
     steps:
     - uses: actions/checkout@master
     - name: chalice deploy
-      uses: 5tigerjelly/chalice-action@v1
+      uses: 5tigerjelly/chalice-action@master
       with:
         args: deploy
       env:
